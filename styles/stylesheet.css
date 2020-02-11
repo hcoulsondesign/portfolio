@@ -1,0 +1,88 @@
+/* Body Styles*/
+body {
+    background-color: rgb(239,234,232);
+}
+
+.about-me {
+  background-color: rgb(28,55,88);
+  color: rgb(239,234,232);
+}
+
+/* Navigation Styles*/
+.nav-panel {
+  border-style: double;
+  border-color: black;
+  border-width: 0.2rem;
+  background-color: white;
+}
+
+a[href="index.html"] {
+  background-color: rgb(239,234,232);
+  padding: 0.25rem;
+}
+
+/* Header Styles*/
+h1 {
+  color: rgb(240,73,66);
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-left: 0.5rem;
+}
+
+h4 {
+  margin-left: 0.5rem;
+}
+
+/* Image Styles*/
+img {
+  margin-left: 0.5rem;
+}
+
+.bordered-image {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.inset-img {
+  margin-left: 1rem;
+}
+
+/* Text & Semantic Element Styles*/
+p {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.section-grouping {
+  border-style:ridge;
+  border-width: 1rem;
+  border-color:rgb(86,79,77);
+  margin-top: 1rem;
+}
+
+.project-group {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(229,111,77);
+  text-align: justify;
+}
+
+.blurb {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(240,73,66);
+  text-align: justify;
+}
