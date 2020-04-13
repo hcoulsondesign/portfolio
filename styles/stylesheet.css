@@ -1,93 +1,282 @@
-/* Body Styles*/
+/*Universal Styles*/
+* {
+  margin: 0;
+}
+
 body {
-    background-color: rgb(239,234,232);
-}
-
-.about-me {
-  background-color: rgb(28,55,88);
-  color: rgb(239,234,232);
-}
-
-/* Navigation Styles*/
-.nav-panel {
-  border-style: double;
-  border-color: black;
-  border-width: 0.2rem;
-  background-color: white;
-}
-
-a[href="index.html"] {
+  font-family: 'Montserrat', 'Raleway', sans-serif;
+  margin: 0;
   background-color: rgb(239,234,232);
-  padding: 0.25rem;
+  color: rgb(43,43,43);
 }
 
-a[href="#Top"] {
-  background-color: rgb(239,234,232);
-  padding: 0.25rem;
+a {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Header Styles*/
-h1 {
-  color: rgb(240,73,66);
+/*Styles for Homepage*/
+.home-page {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(50,33,62);
+  color: white;
+  padding-bottom: 20rem;
 }
 
-h2 {
+#background {
+  z-index: 1;
+  width: 100%;
+}
+
+#home-page-logo {
+  position: absolute;
+  top: 10%;
+  z-index: 2;
+  background-color: transparent;
+  width: 100%;
+}
+
+footer.home {
+  width: 100%;
+  background-color: transparent;
+  padding-top: 4rem;
+}
+
+/*Styles for Page Headers*/
+header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(50,33,62);
+  height: 15rem;
+  text-transform: uppercase;
   text-align: center;
 }
 
+h1 {
+  position: relative;
+  top: 4rem;
+  color: rgb(239,234,232);
+  font-size: 400%;
+  font-weight: lighter;
+  margin-bottom: 2rem;
+}
+
+nav {
+  text-transform: uppercase;
+  color: rgb(239,234,232);
+  font-size: 85%;
+  letter-spacing: 0.6rem;
+  width: 80%;
+  line-height: 200%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+nav.head {
+  position: absolute;
+  bottom: 1rem;
+}
+
+/*Styles for Main Page Content*/
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
 h3 {
-  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 1.5rem 0 1.5rem 0;
 }
 
-h4 {
-  margin-left: 0.5rem;
+h4, h5 {
+  padding: 2%;
 }
 
-/* Image Styles*/
-img {
-  margin-left: 0.5rem;
+nav.menu {
+  color: rgb(43,43,43);
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.page-intro {
+  font-size: 125%;
+  width: 60%;
+}
+
+.blurb {
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(170,150,190);
+  padding-right:1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 90%;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+blockquote {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+
+figcaption {
+  font-size: 80%;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/*Positioning Rules*/
+.vertical {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+
+.horizontal-tiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sidebar {
+  background-color: rgb(170,150,190);
+  padding: 3% 2% 3% 2%;
+  max-width: 25%;
+}
+
+.alongside {
+  position: relative;
+  padding: 5% 10% 5% 10%;
+  font-size: 90%;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.tile {
+  position: relative;
+  margin: 2%;
+  float: left;
+  border: 2px solid rgb(150,150,150);
+  padding: 1rem;
+  width: 25%;
+  height: 20rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapped-to-left {
+  float: right;
+  margin-left: 1.5rem;
+  width: 30%;
+}
+
+.table {
+  display: table;
+  width: 1px; /* This can be any width, so long as it's narrower than any image */
+}
+
+img, figcaption {
+    display: table-row;
+}
+
+.project {
+  width: 60%;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 18%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+/*Aesthetic Formatting Features*/
+.line-above {
+  border-top: solid;
+  border-color: rgb(150,150,150);
+  border-width: 2px;
+}
+
+.line-below {
+  border-bottom: solid;
+  border-color: rgb(43,43,43);
+  border-width: 1px;
 }
 
 .bordered-image {
   border-style: solid;
   border-color: black;
   border-width: 2px;
+  margin: 1.5rem;
 }
 
-.inset-img {
-  margin-left: 1rem;
+.sidebar-image {
+  width: 70%;
+  margin: 1rem auto;
 }
 
-/* Text & Semantic Element Styles*/
-p {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+a.in-line {
+  margin: 0;
+  color: rgb(50,33,62);
+  font-weight: bold;
+  font-style: italic;
 }
 
-.section-grouping {
-  border-style:ridge;
-  border-width: 1rem;
-  border-color:rgb(86,79,77);
-  margin-top: 1rem;
+/*Footer Styles*/
+footer {
+  clear: both;
+  position: relative;
+  background-color: rgb(43,43,43);
+  color: rgb(239,234,232);
+  height: 8rem;
+  text-align: center;
+  line-height: 150%;
+  margin: 0;
+  padding-top: 3rem;
 }
 
-.project-group {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  background-color: white;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(229,111,77);
-  text-align: justify;
+/*Icons*/
+.fa-instagram {
+  color: rgb(239,234,232);
+  font-size: 100%;
 }
 
-.blurb {
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-top: 1rem;
-  border-style: solid;
-  border-width: 2px;
-  border-color: rgb(240,73,66);
-  text-align: justify;
+.fa-seedling {
+  margin: 0 0.5rem;
+}
+
+.fa-wine-glass-alt {
+  margin: 0 0.5rem;
+}
+
+.fa-tools {
+  font-size: 200%;
+  color: rgb(170,150,190);
+  margin: 0 2rem;
 }

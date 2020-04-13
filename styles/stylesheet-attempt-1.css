@@ -1,0 +1,216 @@
+/* Universal Styles*/
+body {
+  background-color: rgb(239,234,232);
+  font-family: 'Montserrat', 'Raleway', sans-serif;
+  color: rgb(43,43,43);
+  margin: 0;
+  min-height: 100%;
+}
+
+/*Header & Footer styles*/
+header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(50,33,62);
+  height: 15rem;
+}
+
+#background {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+}
+
+#home-page-logo {
+  position: relative;
+  width: 100%;
+  margin-top: 15%;
+  z-index: 2;
+}
+
+h1 {
+  color: rgb(239,234,232);
+  text-transform: uppercase;
+  font-size: 400%;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  border-top: solid;
+  border-color: rgb(43,43,43);
+  border-width: 2px;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-top: 1.5rem;
+}
+
+footer {
+  width: 100%;
+  clear: both;
+  position: relative;
+  bottom: 0;
+  background-color: rgb(43,43,43);
+  height: 10rem;
+  color: rgb(239,234,232);
+  text-align: center;
+  font-size: 90%;
+  font-weight: lighter;
+}
+
+nav {
+  position: absolute;
+  bottom: 1rem;
+  color: rgb(239,234,232);
+  text-transform: uppercase;
+  font-size: 85%;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 0.6rem;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  line-height: 200%;
+}
+
+.home-nav {
+  position: relative;
+  margin-top: -3%;
+}
+
+/*Main Page Styles, e.g. body semantic elements, typography, etc.*/
+.home-page {
+  background-color: rgb(50,33,62);
+}
+
+.main-page {
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  top: 18rem;
+  overflow-y: hidden;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-to-right {
+  margin-top: 1.75rem;
+  margin-right: 2rem;
+}
+
+.wrapped-to-left {
+  float: right;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 1.5rem;
+
+}
+
+.page-intro {
+  font-size: 125%;
+  width: 60%;
+  margin-top: -1rem;
+}
+
+.blurb {
+  margin-bottom: 1rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(50,33,62);
+  padding-right:1.5rem;
+  padding-left: 1.5rem;
+  font-size: 90%;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+/* Navigation Styles
+.nav-panel {
+  border-style: double;
+  border-color: black;
+  border-width: 0.2rem;
+  background-color: white;
+}*/
+
+a {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+/*a[href="index.html"] {
+  background-color: rgb(239,234,232);
+  padding: 0.25rem;
+}
+
+a[href="#Top"] {
+  background-color: rgb(239,234,232);
+  padding: 0.25rem;
+}*/
+
+/* Header Styles*/
+
+
+/*h2 {
+  text-align: center;
+}
+
+h3 {
+  margin-left: 0.5rem;
+}
+
+h4 {
+  margin-left: 0.5rem;
+}*/
+
+/* Image Styles*/
+.bordered-image {
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+.inset-img {
+  margin-left: 1rem;
+}
+
+/* Text & Semantic Element Styles
+p {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}*/
+
+.section-grouping {
+  border-style:ridge;
+  border-width: 1rem;
+  border-color:rgb(86,79,77);
+  margin-top: 1rem;
+}
+
+.project-group {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(229,111,77);
+  text-align: justify;
+}

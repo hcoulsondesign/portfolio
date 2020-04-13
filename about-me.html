@@ -3,41 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>Hannah Coulson - About Me</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRaleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9aeef4f1b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
-  <body class="about-me">
+  <body>
     <header>
       <h1 id="Top">About Me</h1>
-      <nav>
-        <p><a href="index.html">Home</a> | <a href="winemaking.html">Winemaking</a> | <a href="portfolio.html">Portfolio</a></p>
+      <nav class="head">
+        <a href="index.html">Home</a> | <a href="winemaking.html">Winemaking</a> | <a href="portfolio.html">Portfolio</a> | <a href="#">Contact</a>
       </nav>
-      <p></p>
-      <img src="images/head-shot.jpg" alt="Head-shot of Hannah with short hair and a big smile" width="166" height="222" class="bordered-image">
-      <p>I am a qualified winemaker and graphic designer currently living in Washington State, USA. When I’m not at the winery or behind a computer, you’ll find me adventuring by foot or kayak through the mountains of PNW.</p>
     </header>
 
-    <section>
-      <h2>My Background</h2>
-      <article class="blurb">
-        <h3>A Love of Wine</h3>
-        <p>Originally from Wisconsin, I pursued my interests in science and technology studying Biochemistry and Computer Science at Colby College in Waterville, ME. During my time at Colby I fell in love with New Zealand while studying abroad and decided to return after graduating. Having grown up in a family of restaurateurs, I had learned to revere wine even before I could drink it, so upon moving to Marlborough, NZ, I pursued a career in their wine industry. Applying my BA in Biochemistry to this field, I earned a Graduate Diploma in Viticulture and Oenology from Lincoln University near Christchurch, NZ, in 2014. I have since worked primarily with Sauvignon Blanc, Pinot Noir, Riesling, and Chardonnay from the Awatere Valley subregion of Marlborough.</p>
-        <p>In 2018, I returned to the United States and relocated to Washington State where I dove into the American wine industry and Washington reds. I joined Upchurch Vineyard as Assistant Winemaker in August 2019 and currently hold down the fort at their Eastern Washington winery on Red Mountain.</p>
-        <blockquote>"I have always loved that winemaking combines art, science, and sociability. The wines of Red Mountain showcase this confluence perfectly."</blockquote>
-        <figure>
-          <img src="images/pressing.jpg" alt="Hannah standing on a ladder in front of a wine press" width="166" height="333">
-          <figcaption>Pressing Grenache off skins for rosé during Harvest 2019</figcaption>
-        </figure>
-        <p><small>Photo courtesy of Rod Welton</small></p>
-      </article>
-      <article class="blurb">
-        <h3>A Passion for Design</h3>
-        <p>The fortunate daughter of a creative mother, I grew up helping with interior decorating projects, holiday staging, and retail displays. In 2017, out of personal interest in another form of design, I completed a Certificate IV in Graphic Design through The Graphic Design School in Avalon, New South Wales, Australia. However, having awoken a passion for design and realizing its applicability to my work as a winemaker at a small family business, I am currently pursuing a Certificate in Front-End Development offered online through the University of Washington.</p>
-      </article>
-    </section>
+    <div class="vertical">
+      <div class="intro-container">
+        <img src="images/head-shot.jpg" alt="Head-shot of Hannah with short hair and a big smile" height="250" class="bordered-image">
+        <p class="page-intro">I am a qualified winemaker and graphic designer currently living in Washington State, USA. When I’m not at the winery or behind a computer, you’ll find me adventuring by foot or kayak through the mountains of PNW.</p>
+      </div>
+
+      <section>
+        <h2 class="line-above">My Background</h2>
+        <article class="blurb">
+          <h3>A Love of Wine</h3>
+          <figure class="wrapped-to-left table">
+            <img src="images/pressing.jpg" alt="Hannah standing on a ladder in front of a wine press" width="166" height="333">
+            <figcaption>Pressing Grenache off skins for rosé during Harvest 2019. Photo courtesy of Rod Welton</figcaption>
+          </figure>
+          <p>Originally from Wisconsin, I pursued my interests in science and technology studying Biochemistry and Computer Science at Colby College in Waterville, ME. During my time at Colby I fell in love with New Zealand while studying abroad and decided to return after graduating. Having grown up in a family of restaurateurs, I had learned to revere wine even before I could drink it, so upon moving to Marlborough, NZ, I pursued a career in their wine industry. Applying my BA in Biochemistry to this field, I earned a Graduate Diploma in Viticulture and Oenology from Lincoln University near Christchurch, NZ, in 2014. I have since worked primarily with Sauvignon Blanc, Pinot Noir, Riesling, and Chardonnay from the Awatere Valley subregion of Marlborough.</p>
+          <p>In 2018, I returned to the United States and relocated to Washington State where I dove into the American wine industry and Washington reds. I joined Upchurch Vineyard as Assistant Winemaker in August 2019 and currently hold down the fort at their Eastern Washington winery on Red Mountain.</p>
+          <blockquote>"I have always loved that winemaking combines art, science, and sociability. The wines of Red Mountain showcase this confluence perfectly."</blockquote>
+          <p><small>Photo courtesy of Rod Welton</small></p>
+        </article>
+        <article class="blurb">
+          <h3>A Passion for Design</h3>
+          <p>The fortunate daughter of a creative mother, I grew up helping with interior decorating projects, holiday staging, and retail displays. In 2017, out of personal interest in another form of design, I completed a Certificate IV in Graphic Design through The Graphic Design School in Avalon, New South Wales, Australia. However, having awoken a passion for design and realizing its applicability to my work as a winemaker at a small family business, I am currently pursuing a Certificate in Front-End Development offered online through the University of Washington.</p>
+        </article>
+      </section>
+    </div>
 
     <footer>
-      <p>Updated 11 February 2020</p>
+      <p>Updated 11 April 2020
+      <br><i class="fab fa-instagram"></i> @hc_winendesign</p>
       <nav>
         <p><a href="#Top">Back to top</a> | <a href="contact.html">Contact</a> </p>
       </nav>
