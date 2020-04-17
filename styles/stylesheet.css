@@ -16,6 +16,11 @@ a {
   color: inherit;
 }
 
+a.in-line:hover {
+  text-decoration: underline;
+  font-size: 105%;
+}
+
 /*Styles for Homepage*/
 .home-page {
   display: flex;
@@ -32,7 +37,7 @@ a {
 
 #home-page-logo {
   position: absolute;
-  top: 10%;
+  top: 15%;
   z-index: 2;
   background-color: transparent;
   width: 100%;
@@ -41,7 +46,26 @@ a {
 footer.home {
   width: 100%;
   background-color: transparent;
-  padding-top: 4rem;
+  padding-top: 6rem;
+}
+
+/*Define hover-off transitions*/
+header a, footer a {
+  transition: font-size 1s ease-out;
+}
+
+/*Define hover states*/
+header a:hover, footer a:hover {
+  font-size: 150%;
+}
+
+/*Define hover-on transitions*/
+header a:hover, footer a:hover {
+  transition: font-size 1s ease;
+}
+
+footer.home a:hover {
+  transition: font-size 1.5s ease;
 }
 
 /*Styles for Page Headers*/
@@ -80,6 +104,23 @@ nav {
 nav.head {
   position: absolute;
   bottom: 1rem;
+}
+
+/*Styles for Sub-headers*/
+.sub-header {
+  position: relative;
+  background-color: rgb(200,195,200);
+  color: rgb(43,43,43);
+  text-transform: none;
+  text-align: left;
+  padding: 0.5rem 5rem 1rem 5rem;
+  line-height: 150%;
+}
+
+.sub-nav {
+  text-transform: none;
+  color: rgb(43,43,43);
+  letter-spacing: normal;
 }
 
 /*Styles for Main Page Content*/
@@ -123,7 +164,7 @@ nav.menu {
 }
 
 p {
-  margin-bottom: 1rem;
+  margin: 0.5rem 0;
 }
 
 blockquote {
@@ -160,10 +201,15 @@ figcaption {
   justify-content: center;
 }
 
-.sidebar {
+aside[class^="sidebar"] {
   background-color: rgb(170,150,190);
   padding: 3% 2% 3% 2%;
   max-width: 25%;
+}
+
+.sidebar-wine-tasting {
+  font-size: 85%;
+  line-height: 1.25rem;
 }
 
 .alongside {
@@ -172,6 +218,12 @@ figcaption {
   font-size: 90%;
   text-align: justify;
   line-height: 1.5rem;
+}
+
+.portfolio-menu {
+  background-color: rgb(170,150,190);
+  padding: 3% 2% 3% 2%;
+  width: 20%;
 }
 
 .tile {
@@ -184,6 +236,17 @@ figcaption {
   height: 20rem;
   text-align: center;
   overflow: hidden;
+  transition: border-width 0.5s linear;
+  box-shadow: 5px 5px 2px rgb(150,150,150);
+}
+
+.tile:nth-child(even) {
+  border: 2px solid rgb(170,150,190);
+  box-shadow: 5px 5px 10px rgb(170,150,190);
+}
+
+.tile:hover {
+  border-width: 5px;
 }
 
 .intro-container {
@@ -214,6 +277,11 @@ img, figcaption {
   left: 18%;
   margin: 0 auto;
   padding-top: 1rem;
+  transition: width 0.3s ease-in;
+}
+
+img.project:hover {
+  width: 62%;
 }
 
 /*Aesthetic Formatting Features*/
@@ -267,7 +335,7 @@ footer {
   font-size: 100%;
 }
 
-.fa-seedling {
+.fa-seedling, .fa-wine-glass-alt, .fa-pencil-alt, .fa-eye {
   margin: 0 0.5rem;
 }
 
