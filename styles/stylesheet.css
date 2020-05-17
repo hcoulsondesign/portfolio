@@ -109,11 +109,11 @@ nav.head {
 /*Styles for Sub-headers*/
 .sub-header {
   position: relative;
-  background-color: rgb(200,195,200);
+  background-color: rgb(209,204,202);
   color: rgb(43,43,43);
   text-transform: none;
   text-align: left;
-  padding: 0.5rem 5rem 1rem 5rem;
+  padding: 0.5rem 10rem 1rem 10rem;
   line-height: 150%;
 }
 
@@ -127,7 +127,7 @@ nav.head {
 h2 {
   text-transform: uppercase;
   text-align: center;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1.5rem 0;
 }
 
 h3 {
@@ -157,10 +157,14 @@ nav.menu {
   border-color: rgb(170,150,190);
   padding-right:1.5rem;
   padding-left: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin: 0 0 1.5rem 0;
   font-size: 90%;
   text-align: justify;
   line-height: 1.5rem;
+}
+
+.space {
+  margin: 1rem 0;
 }
 
 p {
@@ -314,6 +318,47 @@ a.in-line {
   color: rgb(50,33,62);
   font-weight: bold;
   font-style: italic;
+}
+
+/*Form styling*/
+form {
+  display: block;
+  width: 90%;
+  margin: 0 auto 1.5rem auto;
+  padding: 1.5rem;
+  border: 1px solid rgb(43,43,43);
+  box-shadow: 2px 2px 15px rgb(43,43,43)
+}
+
+input, select, textarea, fieldset {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 0.75rem;
+}
+
+input:hover {
+  background-color: rgb(209,204,202)
+}
+
+input[type="checkbox"]:hover, input[type="radio"]:hover, textarea:hover{
+  box-shadow: 2px 2px 5px rgb(43,43,43);
+}
+
+input {
+  border-radius: 5px;
+}
+
+fieldset input {
+  display: inline;
+}
+
+.checkbox label {
+  display: block;
+  position: relative;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 /*Footer Styles*/

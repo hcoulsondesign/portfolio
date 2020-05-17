@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRaleway&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9aeef4f1b8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="Top">Contact</h1>
+      <nav class="head">
+        <a href="index.html">Home</a> | <a href="about-me.html">About Me</a> | <a href="winemaking.html">Winemaking</a> | <a href="portfolio-contents.html">Portfolio</a>
+      </nav>
+    </header>
+
+    <div class="vertical">
+      <div class="space"></div>
+      <section class="blurb">
+        <h2>I'd love to hear from you</h2>
+        <p>If you'd like to know more about me or my work, please complete the form below. I'll be in touch shortly!</p>
+      </section>
+
+      <form method="POST">
+        <label>Name:
+          <input type="text" name="name">
+        </label>
+
+        <label>Phone Number:
+          <input type="tel" name="phone">
+        </label>
+
+        <label>Email:
+          <input type="email" name="email">
+        </label>
+
+        <label>How did you discover my website?
+          <select name="source">
+            <option value="">Please select one</option>
+            <option value="IG">Instragram</option>
+            <option value="link">Link from another website</option>
+            <option value="search">Internet search</option>
+            <option value="referral">Referral/recommendation</option>
+            <option value="personal">Personal introduction</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <fieldset class="checkbox">
+          <legend>Which area of my work are you most interested in? <span class="italic">Please check all that apply</span></legend>
+          <label>
+            <input type="checkbox" name="reason" value="winemaking">Winemaking
+          </label>
+          <label>
+            <input type="checkbox" name="reason" value="graphic">Graphic Design
+          </label>
+          <label>
+            <input type="checkbox" name="reason" value="web">Web Design
+          </label>
+          <label>
+            <input type="checkbox" name="reason" value="photos">Photography
+          </label>
+          <label>
+            <input type="checkbox" name="reason" value="videos">Videography
+          </label>
+        </fieldset>
+
+        <fieldset class="radio-tick">
+          <legend>Would you like to be emailed a link to my full digital portfolio?</legend>
+          <label>
+            <input type="radio" name="portfolio" value="yes">Yes
+          </label>
+          <label>
+            <input type="radio" name="portfolio" value="no">No
+          </label>
+        </fieldset>
+
+        <label>Additional Message: <span class="italic">Optional</span>
+          <textarea name="message" rows="10" cols="50"></textarea>
+        </label>
+
+        <input type="submit" value="Send">
+      </form>
+    </div>
+
+    <footer>
+      <p>Updated 16 May 2020
+      <br><i class="fab fa-instagram"></i> @hc_winendesign</p>
+      <nav>
+        <p><a href="#Top">Back to top</a></p>
+      </nav>
+    </footer>
+  </body>
+</html>
